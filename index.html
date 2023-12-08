@@ -5,40 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sarina Cemilan</title>
     <link rel="stylesheet" href="gaya.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://unpkg.com/feather-icons"></script>
   </head>
   <body>
-    <div class="main">
-      <div class="navbar" style="positif:fixed;">
-        <label class="logo"><span>Sarina</span>Cemilan</label>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">Tentang Kami</a></li>
-          <li><a href="#menu">Produk Kami</a></li>
-          <li><a href="#contact">Kontak</a></li>
-        </ul>
+    <div class="navbar">
+      <label class="logo"><span>Sarina</span>Cemilan</label>
+      <ul class="navbar-list" id="navbarList">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Tentang Kami</a></li>
+        <li><a href="#menu">Produk Kami</a></li>
+        <li><a href="#contact">Kontak</a></li>
+      </ul>
 
-        <div class="tambah">
-          <ul>
-            <li>
-              <a href="#cari"><i data-feather="search"></i></a>
-            </li>
-            <li>
-              <a href="#shop"><i data-feather="shopping-cart"></i></a>
-            </li>
-            <li>
-              <a href="#hmenu"><i data-feather="menu"></i></a>
-            </li>
-          </ul>
-        </div>
+      <div class="tambah">
+        <ul>
+          <li>
+            <a href="#cari"><i data-feather="search" class="icon"></i></a>
+          </li>
+          <li>
+            <a href="#shop"
+              ><i data-feather="shopping-cart" class="icon"></i
+            ></a>
+          </li>
+          <li class="navbar-toggle" id="navbarToggle">&#9776;</li>
+        </ul>
       </div>
-      <!-- Section Hero -->
-      <section class="hero" id="home">
-        <main class="content">
-<h1>Mari Nikmati <span>Cemilan </span>Lokal</h1>
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus, velit?</p>
-<a href="#" class="cta">Pesan Sekarang</a>        
-</main>
+    </div>
+
+    <!-- Section Hero -->
+    <section class="hero" id="home">
+      <main class="content">
+        <h1>Mari Nikmati <span>Cemilan </span>Lokal</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus,
+          velit?
+        </p>
+        <a href="#" class="cta">Pesan Sekarang</a>
+      </main>
     </section>
     <!-- Section Hero End -->
 
@@ -47,15 +51,31 @@
       <h2><span>Tentang </span>Kami</h2>
 
       <div class="row">
-       <div class="about-img">
-        <img src="icon2.jpg" style="width: 45rem; height: 30rem; " alt="Tentang Kami">
-       </div>
-       <div class="content">
-        <h3>Harus Ki Coba </h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto quae rem, magni aut qui culpa.</p>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. In delectus vero consequuntur. Necessitatibus asperiores dolor eos deserunt nulla at debitis.</p> 
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, magnam repudiandae sint nihil repellat animi, omnis minima enim tempora autem a, eius atque laboriosam obcaecati corporis ullam rem sapiente ratione!</p>  
-    </div>
+        <div class="about-img">
+          <img
+            src="img/icon2.jpg"
+            style="width: 45rem; height: 30rem"
+            alt="Tentang Kami"
+          />
+        </div>
+        <div class="content">
+          <h3>Harus Ki Coba</h3>
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto quae
+            rem, magni aut qui culpa.
+          </p>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. In
+            delectus vero consequuntur. Necessitatibus asperiores dolor eos
+            deserunt nulla at debitis.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At, magnam
+            repudiandae sint nihil repellat animi, omnis minima enim tempora
+            autem a, eius atque laboriosam obcaecati corporis ullam rem sapiente
+            ratione!
+          </p>
+        </div>
       </div>
     </section>
     <!-- Section About end -->
@@ -64,36 +84,39 @@
 
     <section id="menu" class="menu">
       <h2><span>Menu </span>Kami</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab illum accusamus, vel ad sed doloribus!</p> 
-    
-    <div class="row">
-      <div class="menu-card">
-         <img src="pisang.jpg" alt="menu1" class="menu-card-img">
-         <h3 class="menu-card-title">- Kripik Pisang</h3>
-         <p class="menu-card-price">IDR 15K</p>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab illum
+        accusamus, vel ad sed doloribus!
+      </p>
+
+      <div class="row">
+        <div class="menu-card">
+          <img src="img/pisang.jpg" alt="menu1" class="menu-card-img" />
+          <h3 class="menu-card-title">- Kripik Pisang</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/pscoklat.jpg" alt="menu2" class="menu-card-img" />
+          <h3 class="menu-card-title">- Pisang Coklat</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/kentang.jpg" alt="menu3" class="menu-card-img" />
+          <h3 class="menu-card-title">- Kripik Kentang</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/scumi.jpg" alt="menu4" class="menu-card-img" />
+          <h3 class="menu-card-title">- Sambal Cumi</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
+        <div class="menu-card">
+          <img src="img/ayamg.jpg" alt="menu5" class="menu-card-img" />
+          <h3 class="menu-card-title">- Ayam Goreng</h3>
+          <p class="menu-card-price">IDR 15K</p>
+        </div>
       </div>
-      <div class="menu-card">
-         <img src="pscoklat.jpg" alt="menu2" class="menu-card-img">
-         <h3 class="menu-card-title">- Pisang Coklat</h3>
-         <p class="menu-card-price">IDR 15K</p>
-      </div>
-      <div class="menu-card">
-         <img src="kentang.jpg" alt="menu3" class="menu-card-img">
-         <h3 class="menu-card-title">- Kripik Kentang</h3>
-         <p class="menu-card-price">IDR 15K</p>
-      </div>
-      <div class="menu-card">
-         <img src="scumi.jpg" alt="menu4" class="menu-card-img">
-         <h3 class="menu-card-title">- Sambal Cumi</h3>
-         <p class="menu-card-price">IDR 15K</p>
-      </div>
-      <div class="menu-card">
-         <img src="ayamg.jpg" alt="menu5" class="menu-card-img">
-         <h3 class="menu-card-title">- Ayam Goreng</h3>
-         <p class="menu-card-price">IDR 15K</p>
-      </div>
-    </div>
-      </section>
+    </section>
 
     <!-- Section Menu End -->
 
@@ -101,31 +124,40 @@
 
     <section id="contact" class="contact">
       <h2><span>Kontak </span>Kami</h2>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab illum accusamus, vel ad sed doloribus!</p> 
-    
-        <div class="row">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63611.59261274902!2d121.71087678646045!3d-4.8172897799268695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2da2d6c4eb3db511%3A0x40ac838bd9ac75d6!2sTeppoe%2C%20Kec.%20Poleang%20Tim.%2C%20Kabupaten%20Bombana%2C%20Sulawesi%20Tenggara!5e0!3m2!1sid!2sid!4v1701930511201!5m2!1sid!2sid"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
-          
-          <form action="">
-            <div class="input-group">
-              <i data feather="user"></i>
-              <input type="text" placeholder="Nama">
-            </div>
-            <div class="input-group">
-              <i data feather="mail"></i>
-              <input type="text" placeholder="Email">
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab illum
+        accusamus, vel ad sed doloribus!
+      </p>
+
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63611.59261274902!2d121.71087678646045!3d-4.8172897799268695!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2da2d6c4eb3db511%3A0x40ac838bd9ac75d6!2sTeppoe%2C%20Kec.%20Poleang%20Tim.%2C%20Kabupaten%20Bombana%2C%20Sulawesi%20Tenggara!5e0!3m2!1sid!2sid!4v1701930511201!5m2!1sid!2sid"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          class="map"
+        ></iframe>
+
+        <form action="">
+          <div class="input-group">
+            <i data feather="user"></i>
+            <input type="text" placeholder="Nama" />
+          </div>
+          <div class="input-group">
+            <i data feather="mail"></i>
+            <input type="text" placeholder="Email" />
           </div>
           <div class="input-group">
             <i data feather="phone"></i>
-            <input type="text" placeholder="Nomor HP">
+            <input type="text" placeholder="Nomor HP" />
           </div>
           <button type="submit" class="btn">Kirim Pesan</button>
         </form>
       </div>
-      </section>
+    </section>
 
-      <!-- Footer Start -->
-      <footer>
+    <!-- Footer Start -->
+    <footer>
       <div class="social">
         <a href="#"><i data-feather="instagram"></i></a>
         <a href="#"><i data-feather="twitter"></i></a>
@@ -133,21 +165,23 @@
       </div>
 
       <div class="links">
-         <a href="#home">Home</a>
-         <a href="#about">Tentang Kami</a>
-         <a href="#menu">Menu</a>
-         <a href="#contact">Kontak</a>
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#menu">Menu</a>
+        <a href="#contact">Kontak</a>
       </div>
 
       <div class="credit">
-        <p>Created by <a href="">Rahmat Adianto</a>. | &copy; 2023. </p>
+        <p>Created by <a href="">Rahmat Adianto</a>. | &copy; 2023.</p>
       </div>
     </footer>
-      <!-- Footer End -->
+    <!-- Footer End -->
     <!-- Section Contact End-->
 
     <script>
       feather.replace();
     </script>
+
+    <script src="skrip.js"></script>
   </body>
 </html>
