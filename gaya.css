@@ -346,7 +346,7 @@ color: #fff;
   }
   
   /* tablet */
-  @media (max-width: 758px) {
+  @media (max-width: 300px) {
     html {
       font-size: 62.5%;
     }
