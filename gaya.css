@@ -38,7 +38,8 @@ color: #fff;
   font-weight: bold;
   width: 15px;
   cursor: pointer;
- margin: 1rem 7% 1rem;
+  margin: 1rem 7% 1rem;
+  margin-right: 20rem;
   
 
 }
@@ -95,11 +96,12 @@ color: #fff;
   margin-left: -4px;
 }
 
+
 .hero {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url('lb.jpg');
+  background-image: url('img/lb3.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -331,7 +333,10 @@ color: #fff;
           color: black;
           font-weight: bold;
         }
-
+        
+        #navbarToggle {
+          display: none;
+        }
 /* mendia queries */
 /* laptop */
 @media (max-width: 1366px) {
@@ -346,11 +351,11 @@ color: #fff;
       font-size: 62.5%;
     }
 
-    #hmenu {
+    #navbarToggle {
       display: inline-block;
     }
 
-    .navbar ul {
+    .main .navbar ul {
       position: absolute;
       top: 100%;
       right: -100%;
@@ -361,11 +366,11 @@ color: #fff;
 
     }
 
-    .navbar .logo {
+.icon {
+  width: 20px;
+}
 
-    }
-
-    .navbar ul a {
+    .main .navbar ul a {
       color: black;
       display: block;
       margin: 1.5rem;
@@ -373,7 +378,7 @@ color: #fff;
       font-size: 2rem;
     }
 
-    .navbar ul a::after {
+    .main .navbar ul a::after {
       transform-origin: 0 0;
     }
 
@@ -421,5 +426,7 @@ color: #fff;
       html {
         font-size: 55%;
       }
-  
+      
+
+    }
      
